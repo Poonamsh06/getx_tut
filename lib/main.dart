@@ -15,15 +15,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
-      locale: Locale("en_Us"),
-      fallbackLocale: Locale("en_US"),
-      translations: Languages(),
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: LocalizationPage(),
-    );
+        title: 'Flutter Demo',
+        locale: Locale("en_Us"),
+        fallbackLocale: Locale("en_US"),
+        translations: Languages(),
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: Home()
+        // LocalizationPage(),
+        );
   }
 }
