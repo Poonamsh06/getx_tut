@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tut/example_two.dart';
 import 'package:getx_tut/home.dart';
 import 'package:getx_tut/localization.dart';
 import 'package:getx_tut/services/translation_services.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Home()
+        home: ExampleTwo()
         // LocalizationPage(),
         );
   }
