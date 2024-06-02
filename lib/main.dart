@@ -4,6 +4,7 @@ import 'package:getx_tut/example_two.dart';
 import 'package:getx_tut/home.dart';
 import 'package:getx_tut/localization.dart';
 import 'package:getx_tut/services/translation_services.dart';
+import 'package:getx_tut/switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         locale: Locale("en_Us"),
         fallbackLocale: Locale("en_US"),
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ExampleTwo()
+        home: SwitchPage()
         // LocalizationPage(),
         );
   }
